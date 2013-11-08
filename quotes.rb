@@ -15,6 +15,10 @@ class String
 end
 
 howmany = (ARGV[0].nil? ? 0 : ARGV[0].to_i)
+if howmany == 0
+	puts "Usage: quotes.rb <number of quotes to fetch>".red
+	exit
+end
 puts "Now inserting " + howmany.to_s + " quotes to the database"
 skips = 0
 for i in 1..howmany

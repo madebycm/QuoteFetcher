@@ -14,9 +14,10 @@ class String
 	def red;            "\033[31m#{self}\033[0m" end
 end
 
-puts "Now inserting " + ARGV[0].to_s + " quotes to the database"
+howmany = (ARGV[0].nil? ? 0 : ARGV[0].to_i)
+puts "Now inserting " + howmany.to_s + " quotes to the database"
 skips = 0
-for i in 0..ARGV[0].to_i
+for i in 1..howmany
 	output = ''
 	open("http://iheartquotes.com/api/v1/random") { |f|
 		f.each_line {|line| output << line}

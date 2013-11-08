@@ -9,7 +9,6 @@ class String
 	def brown;         "\033[33m#{self}\033[0m" end
 	def gray;           "\033[37m#{self}\033[0m" end
 	def bg_blue;        "\033[44m#{self}\033[0m" end
-	def bg_green;       "\033[42m#{self}\033[0m" end
 	def bold;           "\033[1m#{self}\033[22m" end
 	def green;          "\033[32m#{self}\033[0m" end
 	def red;            "\033[31m#{self}\033[0m" end
@@ -43,4 +42,6 @@ for i in 0..ARGV[0].to_i
 		"quote" => output})
 	puts ":::INSERT RECEIPT::: ".brown + insert.to_s.gray
 end
-puts "OPERATION COMPLETE".bold.bg_green + " Inserted " + i.to_s + " quotes with " + skips.to_s + " skips"
+puts "\n\n"
+puts "\t" + "OPERATION COMPLETE!" + " Inserted " + i.to_s + " quotes with " + skips.to_s + " skips"
+puts "\n"

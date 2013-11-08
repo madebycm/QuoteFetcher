@@ -1,7 +1,7 @@
 QuoteFetcher
 =========
 
-Fetches 1000 quotes (per turn) from iheartquotes.com. Also ensures no duplicates will end up in the database.
+Fetches quotes from iheartquotes.com. Also ensures no duplicates will end up in the database.
 
 Requires
 -------
@@ -12,4 +12,4 @@ Requires
 
 Usage
 -----
-- ruby quotes.rb
+- ruby quotes.rb <number of quotes to fetch>

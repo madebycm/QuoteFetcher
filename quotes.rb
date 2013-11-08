@@ -7,7 +7,7 @@ mongo = MongoClient.new()
 
 "Now inserting 1000 quotes to the database"
 skips = 0
-for i in 0..100
+for i in 0..1000
 	output = ''
 	open("http://iheartquotes.com/api/v1/random") { |f|
 		f.each_line {|line| output << line}

@@ -6,7 +6,8 @@ mongo = MongoClient.new()
 @db = mongo.db('quotes')
 
 "Now inserting 1000 quotes to the database"
-for i in 0..1000
+skips = 0
+for i in 0..100
 	output = ''
 	open("http://iheartquotes.com/api/v1/random") { |f|
 		f.each_line {|line| output << line}
@@ -23,6 +24,7 @@ for i in 0..1000
 	}).to_a.length
 	if check > 0
 		p "   == [Quote already in DB, skip...]"
+		skip += 1
 		next
 	end
 	# insert
@@ -32,4 +34,4 @@ for i in 0..1000
 	p insert
 	p "=================================="
 end
-p "Operation complete"
+p "Operation complete with " + skips.to_s + " skips"

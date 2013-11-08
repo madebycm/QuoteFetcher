@@ -19,7 +19,7 @@ if howmany == 0
 	puts "Usage: quotes.rb <number of quotes to fetch>".red
 	exit
 end
-puts "Now inserting " + howmany.to_s + " quotes to the database"
+puts "Now inserting ".bg_blue + howmany.to_s.bg_blue + " quotes to the database".bg_blue
 skips = 0
 for i in 1..howmany
 	output = ''
@@ -32,7 +32,7 @@ for i in 1..howmany
 	output = output.join("")
 	puts ":::On digest (".green + i.to_s.green + ") found a quote:::".green
 	p
-	puts "\t" + output.bg_blue
+	p output
 	p
 	check = @db.collection('q').find_one({
 		"quote" => output

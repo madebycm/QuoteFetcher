@@ -24,7 +24,7 @@ for i in 0..100
 	}).to_a.length
 	if check > 0
 		p "   == [Quote already in DB, skip...]"
-		skip += 1
+		skips += 1
 		next
 	end
 	# insert

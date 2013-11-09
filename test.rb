@@ -1,3 +1,4 @@
+require 'bundler/setup' 
 require 'mongo'
 require 'json'
 require 'htmlentities'

@@ -12,6 +12,8 @@ Requires
 
 Usage
 -----
-- ruby quotes.rb <number of quotes to fetch>
+- 'ruby quotes.rb <number of quotes to fetch>'
+
 or
+
 - Run as a fake daemon with: 'nohup ruby quotes.rb <number of quotes to fetch> &'

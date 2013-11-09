@@ -1,5 +1,6 @@
 require 'bundler/setup' 
 require 'mongo'
+require 'bson_ext'
 require 'json'
 require 'htmlentities'
 

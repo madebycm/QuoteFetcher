@@ -12,8 +12,9 @@ Requires
 
 Usage
 -----
+- bundle install
 - 'ruby quotes.rb <number of quotes to fetch>'
 
-or
+or run as a fake daemon with:
 
-- Run as a fake daemon with: 'nohup ruby quotes.rb <number of quotes to fetch> &'
+- 'nohup ruby quotes.rb <number of quotes to fetch> &'
